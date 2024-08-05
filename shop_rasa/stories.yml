@@ -1,0 +1,31 @@
+version: "3.1"
+stories:
+  - story: user asks for price
+    steps:
+      - intent: ask_price
+      - action: action_check_price
+
+  - story: user asks for product availability
+    steps:
+      - intent: ask_availability
+      - action: action_check_availability
+
+  - story: user asks about a brand
+    steps:
+      - intent: ask_about_brand
+      - action: action_provide_brand_info
+
+  - story: user asks for discounts or sales
+    steps:
+      - intent: ask_sales_or_discounts
+      - action: action_check_sales
+
+  - story: greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: user needs help
+    steps:
+      - intent: ask_for_help
+      - action: utter_did_that_help

@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - affirm
+  - deny
+  - greet
+  - thankyou
+  - goodbye
+  - ask_price
+  - ask_product
+  - ask_about_brand
+  - ask_sales_or_discounts
+  - ask_availability
+
+entities:
+  - name
+
+slots:
+  concerts:
+    type: list
+    influence_conversation: false
+    mappings:
+    - type: custom
+  venues:
+    type: list
+    influence_conversation: false
+    mappings:
+    - type: custom
+  likes_music:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: custom
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_default:
+    - text: "Sorry, I didn't understand that. Could you please rephrase?"
+  utter_youarewelcome:
+    - text: "You're welcome!"
+  utter_iamabot:
+    - text: "I am a bot here to assist you with your queries."
+  utter_get_started:
+    - text: "I can help you with product inquiries, prices, availability, and more. What would you like to know?"
+  utter_awesome:
+    - text: "Great! Feel free to ask me about products, prices, brands, discounts, or availability."
+  utter_happy:
+    - text: "I'm glad to hear that you're happy!"
+  utter_cheer_up:
+    - text: "Cheer up! Everything will be okay."
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+actions:
+  - action_search_product
+  - action_check_price
+  - action_check_availability
+  - action_provide_brand_info
+  - action_check_sales
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

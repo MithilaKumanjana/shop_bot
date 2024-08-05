@@ -1,0 +1,71 @@
+version: "3.1"
+nlu:
+  - intent: ask_price
+    examples: |
+      - What is the price of the TV?
+      - What is the price of the washing machine?
+      - What is the price of the dishwasher?
+      - What is the price of the laptop?
+      - What is the price of the tablet?
+      - What is the price of the camera?
+      - What is the price of the smartwatch?
+      - What is the price of the soundbar?
+      - What is the price of the freezer?
+      - What is the price of the air fryer?
+      - What is the price of the air conditioner?
+  - intent: ask_product
+    examples: |
+      - Do you have any gas cookers?
+      - Do you sell air conditioners?
+      - Do you have any electric stoves?
+      - Do you sell smartphones?
+      - Do you have any discounts on gadgets?
+      - Do you sell headphones?
+      - Do you sell printers?
+      - Do you have any offers on computers?
+      - Do you sell speakers?
+      - Do you sell gaming laptops?
+      - Do you have any promotions on audio equipment?
+      - Do you sell dehumidifiers?
+      - Do you sell robotic vacuum cleaners?
+  - intent: ask_about_brand
+    examples: |
+      - Can you tell me about your Samsung products?
+      - Can you tell me about your LG products?
+      - Can you tell me about your Sony products?
+      - Can you tell me about your Apple products?
+      - Can you tell me about your Dell products?
+      - Can you tell me about your Lenovo products?
+      - Can you tell me about your Acer products?
+      - Can you tell me about your Panasonic products?
+      - Can you tell me about your Toshiba products?
+      - Can you tell me about your Nikon products?
+      - Can you tell me about your Fujifilm products?
+      - Can you tell me about your Huawei products?
+  - intent: ask_sales_or_discounts
+    examples: |
+      - Do you have any discounts on electronics?
+      - Do you have any offers on home appliances?
+      - Do you have any sales on kitchen appliances?
+      - Do you have any promotions on electronics?
+      - Do you have any deals on gadgets?
+      - Do you have any deals on cameras?
+      - Do you have any promotions on kitchen gadgets?
+      - Do you have any offers on home entertainment?
+      - Do you have any sales on small appliances?
+      - Do you have any sales on mobile phones?
+  - intent: ask_availability
+    examples: |
+      - I need a fridge.
+      - I need a microwave oven.
+      - I need a blender.
+      - I need a coffee maker.
+      - I need a toaster.
+      - I need a hair dryer.
+      - I need a slow cooker.
+      - I need a rice cooker.
+      - I need a vacuum sealer.
+      - I need a bread maker.
+      - I need a popcorn maker.
+      - I need a coffee grinder.
+      - I need an air purifier.
